@@ -4,8 +4,8 @@ import './style.css'
 
 var view = function () {
     return (
-        <div className="sample">
-
+        <div className="art">
+            paintings
         </div>
     )
 }
