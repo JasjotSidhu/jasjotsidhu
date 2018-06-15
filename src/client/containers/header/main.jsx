@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import { Component } from 'react'
 import ComponentView from './view'
 
 /**
@@ -14,7 +14,16 @@ export default class Main extends Component {
      */
     constructor (props) {
         super(props)
+        this.state = {
+            current: 'home',
+        }
+    }
 
+    handleClick (e) {
+        console.log('click ', e)
+        this.setState({
+            current: e.key,
+        })
     }
 
     /**

@@ -1,3 +1,10 @@
-.sample{
-
+.header {
+  .ant-layout-header {
+    background: #F5D76E;
+    .ant-menu {
+      line-height: 62px;
+      float: right;
+      background: transparent;
+    }
+  }
 }

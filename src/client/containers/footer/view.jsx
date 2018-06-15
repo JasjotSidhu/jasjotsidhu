@@ -7,7 +7,7 @@ const {Footer} = Layout
 var view = function () {
     return (
         <div className="footer">
-            <Footer>Footer</Footer>
+            <Footer>Jasjot Sidhu</Footer>
         </div>
     )
 }
