@@ -1,18 +1,16 @@
 import React from 'react'
-import logo from '../../images/logo.svg'
-import { Button } from 'antd'
 import './style.css'
+import Header from '../header'
+import Footer from '../footer'
+import { Layout } from 'antd'
 
-var view = function () {
+const {Content} = Layout
+let view = function () {
     return (
-        <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo"/>
-                <h1 className="App-title">Welcome Jass Sidhu</h1>
-            </header>
-            <p className="App-intro">
-                <Button type="primary">Primary</Button>
-            </p>
+        <div className="app">
+            <Header/>
+            <Content>Content</Content>
+            <Footer/>
         </div>
     )
 }
