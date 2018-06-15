@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from '../../images/logo.svg'
 import { Button } from 'antd'
-import './style.scss'
+import './style.css'
 
 var view = function () {
     return (
