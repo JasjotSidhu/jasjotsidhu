@@ -1,6 +1,7 @@
 import React from 'react'
 import { Layout, Menu, Icon } from 'antd'
 import './style.css'
+import { Link } from 'react-router-dom'
 
 const {Header} = Layout
 
@@ -14,20 +15,28 @@ let view = function () {
                     mode="horizontal"
                 >
                     <Menu.Item key="home">
-                        <Icon type="home"/>
-                        <span>Home</span>
+                        <Link to={'/home'}>
+                            <Icon type="home"/>
+                            <span>Home</span>
+                        </Link>
                     </Menu.Item>
                     <Menu.Item key="blog">
-                        <Icon type="book"/>
-                        <span>Blog</span>
+                        <Link to={'/blog'}>
+                            <Icon type="book"/>
+                            <span>Blog</span>
+                        </Link>
                     </Menu.Item>
                     <Menu.Item key="paintings">
-                        <Icon type="picture"/>
-                        <span>Paintings</span>
+                        <Link to={'/paintings'}>
+                            <Icon type="picture"/>
+                            <span>Paintings</span>
+                        </Link>
                     </Menu.Item>
                     <Menu.Item key="contact">
-                        <Icon type="mail"/>
-                        <span>Contact</span>
+                        <Link to={'/contact'}>
+                            <Icon type="mail"/>
+                            <span>Contact</span>
+                        </Link>
                     </Menu.Item>
                 </Menu>
             </Header>

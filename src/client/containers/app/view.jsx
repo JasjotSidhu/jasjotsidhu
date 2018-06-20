@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.css'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Header from '../header'
 import Footer from '../footer'
 import Home from '../home'
@@ -10,9 +10,9 @@ import Contact from '../contact'
 
 let view = function () {
     return (
-        <div className="app">
-            <Header/>
-            <BrowserRouter>
+        <Router>
+            <div className="app">
+                <Header/>
                 <Switch>
                     <Route path={'/'} exact component={Home}/>
                     <Route path={'/home'} component={Home}/>
@@ -20,9 +20,9 @@ let view = function () {
                     <Route path={'/paintings'} component={Paintings}/>
                     <Route path={'/contact'} component={Contact}/>
                 </Switch>
-            </BrowserRouter>
-            <Footer/>
-        </div>
+                <Footer/>
+            </div>
+        </Router>
     )
 }
 
