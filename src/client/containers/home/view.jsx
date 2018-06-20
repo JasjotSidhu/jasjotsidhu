@@ -2,7 +2,7 @@ import React from 'react'
 import {} from 'antd'
 import './style.css'
 
-var view = function () {
+let view = function () {
     return (
         <div className="home">
             home
