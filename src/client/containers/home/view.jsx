@@ -4,7 +4,7 @@ import './style.css'
 
 let view = function () {
     return (
-        <div className="home">
+        <div className="page home">
             home
         </div>
     )

@@ -4,7 +4,7 @@ import './style.css'
 
 var view = function () {
     return (
-        <div className="art">
+        <div className="page art">
             paintings
         </div>
     )
