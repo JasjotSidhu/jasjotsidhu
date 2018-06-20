@@ -1,6 +1,84 @@
+@import '../../../node_modules/antd/dist/antd.css';
 @import './variables.scss';
 @import './extends.scss';
 
-.app {
-  background: red;
+@font-face {
+  font-family: Arial;
+  src: url(../fonts/arial.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Arial-Bold;
+  src: url(../fonts/Arial_Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Lato-Light;
+  src: url(../fonts/Lato-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Lato-Regular;
+  src: url(../fonts/Lato-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Lato-Bold;
+  src: url(../fonts/Lato-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Roboto-Light;
+  src: url(../fonts/Roboto-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(../fonts/Roboto-Bold.ttf) format("truetype");
+}
+
+body {
+  font-family: Lato-Regular, sans-serif !important;
+  background-color: #f7f7f7 !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::-moz-selection {
+  color: $brand-black;
+  background: $primary-color;;
+}
+
+::selection {
+  color: $brand-black;
+  background: $primary-color;
+}
+
+.page {
+  min-height: calc(100vh - 64px);
+  .page-heading {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding: 80px 0;
+    .title {
+      font-size: 50px;
+      font-family: $roboto-bold;
+      margin-bottom: 25px;
+    }
+    .quote {
+      font-size: 30px;
+      font-style: italic;
+      color: #b5b5b5;
+      font-family: $lato-light;
+    }
+  }
 }

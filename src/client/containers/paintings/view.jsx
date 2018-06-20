@@ -2,7 +2,7 @@ import React from 'react'
 import {} from 'antd'
 import './style.css'
 import Gallery from 'react-photo-gallery'
-import Lightbox from 'react-images'
+import LightBox from 'react-images'
 
 const photos = [
     {src: 'https://source.unsplash.com/2ShvY8Lf6l0/800x599', width: 4, height: 3},
@@ -19,8 +19,17 @@ const photos = [
 let view = function () {
     return (
         <div className="page art">
+            <div className="page-heading">
+                <p className="title">Paintings</p>
+                <p className="quote">
+                    " My painting is visible images which conceal nothing... they evoke mystery and
+                    indeed when one sees one of my pictures, one asks oneself this simple question 'What does that
+                    mean'? It does not mean anything, because mystery means nothing either, it is unknowable. ~ Rene
+                    Magritte "
+                </p>
+            </div>
             <Gallery photos={photos} onClick={this.openLightBox.bind(this)}/>
-            <Lightbox images={photos}
+            <LightBox images={photos}
                       onClose={this.closeLightBox.bind(this)}
                       onClickPrev={this.previousImage.bind(this)}
                       onClickNext={this.nextImage.bind(this)}
