@@ -18,7 +18,7 @@ const photos = [
 
 let view = function () {
     return (
-        <div className="page art">
+        <div className="page animated fadeIn art">
             <div className="page-heading">
                 <p className="title">Paintings</p>
                 <p className="quote">

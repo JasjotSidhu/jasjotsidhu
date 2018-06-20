@@ -4,7 +4,7 @@ import './style.css'
 
 let view = function () {
     return (
-        <div className="page home">
+        <div className="page animated fadeIn home">
             home
         </div>
     )

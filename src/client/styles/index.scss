@@ -64,6 +64,7 @@ body {
 
 .page {
   min-height: calc(100vh - 64px);
+  background: #fafafa;
   .page-heading {
     width: 70%;
     margin: auto;
@@ -73,6 +74,7 @@ body {
       font-size: 50px;
       font-family: $roboto-bold;
       margin-bottom: 25px;
+      letter-spacing: 1px;
     }
     .quote {
       font-size: 30px;
@@ -81,4 +83,53 @@ body {
       font-family: $lato-light;
     }
   }
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+.btn-orange {
+  background: $brand-orange;
+  border: 1px solid $brand-orange;
+  color: $brand-white;
+  letter-spacing: 2px;
+  &:hover, &:focus, &:visited {
+    background: $brand-orange;
+    border: 1px solid $brand-orange;
+    color: $brand-white;
+  }
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
 }
