@@ -25,10 +25,9 @@ let view = function () {
             <div className="page-heading">
                 <p className="title">Hi, I am Jass Sidhu!</p>
                 <p className="quote">
-                    " My painting is visible images which conceal nothing... they evoke mystery and
+                    My painting is visible images which conceal nothing... they evoke mystery and
                     indeed when one sees one of my pictures, one asks oneself this simple question 'What does that
-                    mean'? It does not mean anything, because mystery means nothing either, it is unknowable. ~ Rene
-                    Magritte "
+                    mean'? It does not mean anything, because mystery means nothing either, it is unknowable.
                 </p>
             </div>
             <div className="section">
@@ -46,22 +45,21 @@ let view = function () {
                 <p className="title">Favourite Quotes</p>
                 <div className="list">
                     <p className="quote">
-                        " My painting is visible images which conceal nothing... they evoke mystery and
-                        indeed when one sees one of my pictures, one asks oneself this simple question 'What does that
-                        mean'? It does not mean anything, because mystery means nothing either, it is unknowable. ~ Rene
-                        Magritte "
+                        " If you hire people just because they can do a job, they’ll work for your money. But if you
+                        hire people who believe what you believe, they’ll work for you with blood and sweat and tears. " ~
+                        Simon Sinek
                     </p>
                     <p className="quote">
-                        " My painting is visible images which conceal nothing... they evoke mystery and
-                        indeed when one sees one of my pictures, one asks oneself this simple question 'What does that
-                        mean'? It does not mean anything, because mystery means nothing either, it is unknowable. ~ Rene
-                        Magritte "
+                        " I loved painting and drawing for many reasons. One of them was that all it really required was
+                        me, a pencil and a pad. It was something I was passionate about, and still am " ~ Danny Huston
                     </p>
                     <p className="quote">
-                        " My painting is visible images which conceal nothing... they evoke mystery and
-                        indeed when one sees one of my pictures, one asks oneself this simple question 'What does that
-                        mean'? It does not mean anything, because mystery means nothing either, it is unknowable. ~ Rene
-                        Magritte "
+                        " The way to enjoy life best is to wrap up one goal and start right on the next one. Don't linger
+                        too long at the table of success; the only way to enjoy another meal is to get hungry. " ~ Jim
+                        Rohn
+                    </p>
+                    <p className="quote">
+                        “ The richest people in the world look for and build networks, everyone else looks for work ” ~ Robert Kiyosaki
                     </p>
                 </div>
             </div>

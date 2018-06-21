@@ -24,8 +24,8 @@ let view = function () {
                 <p className="quote">
                     " My painting is visible images which conceal nothing... they evoke mystery and
                     indeed when one sees one of my pictures, one asks oneself this simple question 'What does that
-                    mean'? It does not mean anything, because mystery means nothing either, it is unknowable. ~ Rene
-                    Magritte "
+                    mean'? It does not mean anything, because mystery means nothing either, it is unknowable. " ~ Rene
+                    Magritte
                 </p>
             </div>
             <Gallery photos={photos} onClick={this.openLightBox.bind(this)}/>

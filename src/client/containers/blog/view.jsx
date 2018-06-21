@@ -10,7 +10,7 @@ var view = function () {
                 <p className="title">Blog</p>
                 <p className="quote">
                     " A blog is neither a diary nor a journal. Many people think of blogging in relation to those two
-                    things, confessional or practical. It is neither but includes elements of both. ~ Lemn Sissay "
+                    things, confessional or practical. It is neither but includes elements of both. " ~ Lemn Sissay
                 </p>
             </div>
             <div className="container">
