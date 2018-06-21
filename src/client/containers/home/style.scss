@@ -3,6 +3,7 @@
 .home {
   .section {
     padding:2px;
+    margin-bottom: 50px;
     .title {
       font-size: 25px;
       margin-bottom: 10px;
@@ -12,6 +13,17 @@
       padding:10px 20px;
       display: inline-block;
       font-family: $lato-light;
+    }
+    .list{
+      width:70%;
+      margin: auto;
+    }
+    .quote {
+      font-size: 30px;
+      font-style: italic;
+      color: #b5b5b5;
+      font-family: $lato-light;
+      margin: 100px 0;
     }
   }
 }
