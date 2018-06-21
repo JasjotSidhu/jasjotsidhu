@@ -1,30 +1,47 @@
 import React from 'react'
-import { Row, Col } from 'antd'
+import {} from 'antd'
 import './style.css'
+import Gallery from 'react-photo-gallery'
+import LightBox from 'react-images'
+import jass1 from '../../images/sidhu/jass.jpg'
+import jass2 from '../../images/sidhu/jass2.jpg'
+import jass3 from '../../images/sidhu/jass3.jpg'
+import jass4 from '../../images/sidhu/jass4.jpg'
+import jass5 from '../../images/sidhu/jass5.jpg'
+import jass6 from '../../images/sidhu/jasss.jpg'
+
+const photos = [
+    {src: jass1, width: 4, height: 3},
+    {src: jass6, width: 1, height: 1},
+    {src: jass2, width: 3, height: 3},
+    {src: jass3, width: 3, height: 4},
+    {src: jass4, width: 3, height: 4},
+    {src: jass5, width: 4, height: 3}
+]
 
 let view = function () {
     return (
         <div className="page animated fadeIn home">
-            <Row>
-                <Col lg={12}>
-                    <div className="welcome">
-                    </div>
-                </Col>
-                <Col lg={12}>
-                    <div className="about">
-                        <p className="title">
-                            Hi, I am Jass Sidhu!
-                        </p>
-                        <p className="text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                </Col>
-            </Row>
+            <div className="page-heading">
+                <p className="title">Hi, I am Jass Sidhu!</p>
+                <p className="quote">
+                    " My painting is visible images which conceal nothing... they evoke mystery and
+                    indeed when one sees one of my pictures, one asks oneself this simple question 'What does that
+                    mean'? It does not mean anything, because mystery means nothing either, it is unknowable. ~ Rene
+                    Magritte "
+                </p>
+            </div>
+            <div className="section">
+                <p className="title">My Photos</p>
+                <Gallery photos={photos} onClick={this.openLightBox.bind(this)}/>
+                <LightBox images={photos}
+                          onClose={this.closeLightBox.bind(this)}
+                          onClickPrev={this.previousImage.bind(this)}
+                          onClickNext={this.nextImage.bind(this)}
+                          currentImage={this.state.currentImage}
+                          isOpen={this.state.lightBoxIsOpen}
+                />
+            </div>
         </div>
     )
 }

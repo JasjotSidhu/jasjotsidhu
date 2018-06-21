@@ -14,7 +14,36 @@ export default class Main extends Component {
      */
     constructor (props) {
         super(props)
+        this.state = {
+            currentImage: 0,
+            lightBoxIsOpen: false
+        }
+    }
 
+    openLightBox (event, obj) {
+        this.setState({
+            currentImage: obj.index,
+            lightBoxIsOpen: true,
+        })
+    }
+
+    closeLightBox () {
+        this.setState({
+            currentImage: 0,
+            lightBoxIsOpen: false,
+        })
+    }
+
+    previousImage () {
+        this.setState({
+            currentImage: this.state.currentImage - 1,
+        })
+    }
+
+    nextImage () {
+        this.setState({
+            currentImage: this.state.currentImage + 1,
+        })
     }
 
     /**

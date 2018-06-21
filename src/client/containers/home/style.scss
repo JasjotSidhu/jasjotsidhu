@@ -1,15 +1,17 @@
+@import '../../styles/variables.scss';
+
 .home {
-  .welcome {
-    background: url('../../images/jass2.jpg') no-repeat;
-    background-size: cover;
-    height: calc(100vh - 64px);
-    margin:20px;
-  }
-  .about{
-    height: calc(100vh - 64px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .section {
+    padding:2px;
+    .title {
+      font-size: 25px;
+      margin-bottom: 10px;
+      font-style: italic;
+      color: $brand-orange;
+      background: #efefef;
+      padding:10px 20px;
+      display: inline-block;
+      font-family: $lato-light;
+    }
   }
 }
