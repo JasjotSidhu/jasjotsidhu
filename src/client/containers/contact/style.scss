@@ -1,3 +1,24 @@
-.sample{
+@import '../../styles/variables.scss';
 
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:calc(100vh - 63px - 69px);
+  .title {
+    font-size: 30px;
+    font-family: $roboto-regular;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 35px;
+    text-align: center;
+  }
+  img {
+    width: 100px;
+  }
+  ul {
+    li {
+      display: inline-block;
+    }
+  }
 }

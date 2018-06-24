@@ -33,7 +33,7 @@ let view = function () {
     return (
         <div className="page animated fadeIn art">
             <div className="page-heading">
-                <p className="title">Paintings</p>
+                <p className="title">My Paintings</p>
                 <p className="quote">
                     " My painting is visible images which conceal nothing... they evoke mystery and
                     indeed when one sees one of my pictures, one asks oneself this simple question 'What does that

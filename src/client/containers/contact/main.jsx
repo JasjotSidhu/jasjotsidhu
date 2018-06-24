@@ -14,7 +14,19 @@ export default class Main extends Component {
      */
     constructor (props) {
         super(props)
+        this.state = {
+            visible: false,
+        }
+    }
 
+    hide () {
+        this.setState({
+            visible: false,
+        })
+    }
+
+    handleVisibleChange (visible) {
+        this.setState({visible})
     }
 
     /**
