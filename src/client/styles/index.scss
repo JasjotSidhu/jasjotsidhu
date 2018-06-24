@@ -62,11 +62,16 @@ body {
   background: $primary-color;
 }
 
+a {
+  color: $brand-orange;
+  &:hover{
+    color: $brand-orange;
+  }
+}
+
 .page {
   min-height: calc(100vh - 64px);
   background: #fafafa;
-  background-image: url('../images/star.png');
-  background-size: 50px;
   .page-heading {
     width: 70%;
     margin: auto;

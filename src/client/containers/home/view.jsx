@@ -25,13 +25,14 @@ let view = function () {
             <div className="page-heading">
                 <p className="title">Hi, I am Jass Sidhu!</p>
                 <p className="quote">
-                    My painting is visible images which conceal nothing... they evoke mystery and
-                    indeed when one sees one of my pictures, one asks oneself this simple question 'What does that
-                    mean'? It does not mean anything, because mystery means nothing either, it is unknowable.
+                    An Electronics Engineer from Thapar University come painting artist. Since I never wanted to do some
+                    regular 9 to 5 job, so I ignored all my campus placements and co-founded a software company called
+                    <a href='https://www.laxaar.com/' target="_blank"> Laxaar</a>. Whenever I am free from my work I
+                    make paintings and give it to my close friends as gifts.
                 </p>
             </div>
             <div className="section">
-                <p className="title">My Photos</p>
+                <p className="title">Some photos of mine</p>
                 <Gallery photos={photos} onClick={this.openLightBox.bind(this)}/>
                 <LightBox images={photos}
                           onClose={this.closeLightBox.bind(this)}
@@ -42,11 +43,12 @@ let view = function () {
                 />
             </div>
             <div className="section">
-                <p className="title">Favourite Quotes</p>
+                <p className="title">My favourite quotes</p>
                 <div className="list">
                     <p className="quote">
                         " If you hire people just because they can do a job, they’ll work for your money. But if you
-                        hire people who believe what you believe, they’ll work for you with blood and sweat and tears. " ~
+                        hire people who believe what you believe, they’ll work for you with blood and sweat and tears. "
+                        ~
                         Simon Sinek
                     </p>
                     <p className="quote">
@@ -54,12 +56,14 @@ let view = function () {
                         me, a pencil and a pad. It was something I was passionate about, and still am " ~ Danny Huston
                     </p>
                     <p className="quote">
-                        " The way to enjoy life best is to wrap up one goal and start right on the next one. Don't linger
+                        " The way to enjoy life best is to wrap up one goal and start right on the next one. Don't
+                        linger
                         too long at the table of success; the only way to enjoy another meal is to get hungry. " ~ Jim
                         Rohn
                     </p>
                     <p className="quote">
-                        “ The richest people in the world look for and build networks, everyone else looks for work ” ~ Robert Kiyosaki
+                        “ The richest people in the world look for and build networks, everyone else looks for work ” ~
+                        Robert Kiyosaki
                     </p>
                 </div>
             </div>
